@@ -15,3 +15,4 @@ setx PATH "%OLDPATH%;C:\k_programming"
 echo.
 echo -- Successfully installed k programming --
 echo -- Restart CMD and run: k --version --
+del win_set_up.bat
