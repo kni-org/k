@@ -9,7 +9,7 @@ echo "Setting up..."
 
 mkdir -p $PREFIX/bin
 
-curl -L https://kni-org.github.io/k/k -o $PREFIX/bin/k
+curl -L https://kni-org.github.io/k/k_termux -o $PREFIX/bin/k
 
 chmod +x $PREFIX/bin/k
 
