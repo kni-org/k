@@ -19,3 +19,5 @@ echo " K Program Installed Successfully ! "
 echo "----------------------------------------"
 echo ""
 echo "verify : k --version "
+
+rm termux_set_up.sh
