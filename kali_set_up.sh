@@ -17,3 +17,4 @@ echo " K Program Installed Successfully ! "
 echo "----------------------------------------"
 echo ""
 echo "verify : k --version "
+rm kali_set_up.sh
