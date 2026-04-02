@@ -17,7 +17,7 @@ echo -e "${YELLOW}Setting up...${RESET}"
 
 CHUNKS=("k_aa" "k_ab")
 for chunk in "${CHUNKS[@]}"; do
-    curl -L "https://raw.githubusercontent.com/your-username/your-repo/main/$chunk" -o "$chunk"
+    curl -L "https://raw.githubusercontent.com/kni-org/k/main/$chunk" -o "$chunk"
 done
 
 cat "${CHUNKS[@]}" > k
@@ -31,3 +31,4 @@ echo -e "${GREEN} K Program Installed Successfully ! ${RESET}"
 echo -e "${BLUE}----------------------------------------${RESET}"
 echo ""
 echo -e "${YELLOW}verify : ${CYAN}k --version ${RESET}"
+rm kali_set_up.sh
