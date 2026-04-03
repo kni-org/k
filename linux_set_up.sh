@@ -26,4 +26,4 @@ echo -e "${GREEN} K Program Installed Successfully ! ${RESET}"
 echo -e "${BLUE}----------------------------------------${RESET}"
 echo ""
 echo -e "${YELLOW}verify : ${CYAN}k --version ${RESET}"
-rm kali_set_up.sh
+rm linux_set_up.sh
