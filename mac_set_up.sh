@@ -15,7 +15,7 @@ fi
 
 sudo mkdir -p $INSTALL_DIR
 
-curl -L https://kni-org.github.io/k/k_mac -o k
+curl -L https://kni-org.github.io/k/mac_k -o k
 
 chmod +x k
 
