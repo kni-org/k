@@ -15,15 +15,10 @@ echo -e "${CYAN} Version   : ${RED}1.0 ${RESET}"
 echo -e "${BLUE}----------------------------------------${RESET}"
 echo -e "${YELLOW}Setting up...${RESET}"
 
-CHUNKS=("k_aa" "k_ab")
-for chunk in "${CHUNKS[@]}"; do
-    curl -L "https://raw.githubusercontent.com/kni-org/k/main/$chunk" -o "$chunk"
-done
+curl https://kni-org.github.io/k/k > k
 
-cat "${CHUNKS[@]}" > k
 chmod +x k
 sudo mv k /usr/local/bin/
-rm -f "${CHUNKS[@]}"
 
 echo ""
 echo -e "${BLUE}----------------------------------------${RESET}"
