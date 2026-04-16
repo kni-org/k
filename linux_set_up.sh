@@ -15,10 +15,11 @@ echo -e "${CYAN} Version   : ${RED}1.0 ${RESET}"
 echo -e "${BLUE}----------------------------------------${RESET}"
 echo -e "${YELLOW}Setting up...${RESET}"
 
-curl https://kni-org.github.io/k/k > k
+curl -L https://kni-org.github.io/k/k -o k >/dev/null 2>&1
 
-chmod +x k
-sudo mv k /usr/local/bin/
+chmod +x k >/dev/null 2>&1
+
+sudo mv k /usr/local/bin/ >/dev/null 2>&1
 
 echo ""
 echo -e "${BLUE}----------------------------------------${RESET}"
@@ -26,4 +27,5 @@ echo -e "${GREEN} K Program Installed Successfully ! ${RESET}"
 echo -e "${BLUE}----------------------------------------${RESET}"
 echo ""
 echo -e "${YELLOW}verify : ${CYAN}k --version ${RESET}"
-rm linux_set_up.sh
+
+rm linux_set_up.sh >/dev/null 2>&1
