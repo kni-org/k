@@ -8,18 +8,18 @@ echo -e "\033[34m----------------------------------------\033[0m"
 echo -e "\033[33mSetting up...\033[0m"
 
 if [[ $(uname -m) == "arm64" ]]; then
-    INSTALL_DIR="/opt/homebrew/bin"
+INSTALL_DIR="/opt/homebrew/bin"
 else
-    INSTALL_DIR="/usr/local/bin"
+INSTALL_DIR="/usr/local/bin"
 fi
 
-sudo mkdir -p $INSTALL_DIR
+sudo mkdir -p $INSTALL_DIR >/dev/null 2>&1
 
-curl -L https://kni-org.github.io/k/mac_k -o k
+curl -L https://kni-org.github.io/k/mac_k -o k >/dev/null 2>&1
 
-chmod +x k
+chmod +x k >/dev/null 2>&1
 
-sudo mv k $INSTALL_DIR/k
+sudo mv k $INSTALL_DIR/k >/dev/null 2>&1
 
 echo ""
 echo -e "\033[34m----------------------------------------\033[0m"
@@ -28,4 +28,4 @@ echo -e "\033[34m----------------------------------------\033[0m"
 echo ""
 echo -e "\033[33mverify : \033[36mk --version \033[0m"
 
-rm -- "$0"
+rm -- "$0" >/dev/null 2>&1
